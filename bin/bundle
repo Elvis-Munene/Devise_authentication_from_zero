@@ -73,7 +73,6 @@ m = Module.new do
 
     requirement = bundler_gem_version.approximate_recommendation
 
-    return requirement unless Gem.rubygems_version < Gem::Version.new
 
     requirement += ".a" if bundler_gem_version.prerelease?
 
